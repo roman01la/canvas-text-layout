@@ -19,7 +19,7 @@ Object.assign(canvas.style, {
 canvas.width = w;
 canvas.height = h;
 
-const worker = new Worker("/src/app.js");
+const worker = new Worker("src/app.js");
 
 worker.addEventListener("message", evt => {
   if (evt.data.type === "render") {
